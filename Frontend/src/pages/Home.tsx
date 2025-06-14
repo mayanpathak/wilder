@@ -500,7 +500,6 @@
 //     </motion.div>
 //   );
 // }
-
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useAppContext } from '../context/AppContext';
@@ -766,7 +765,7 @@ export function Home() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [scrollY]);
 
-  // Enhanced animation variants
+  // Enhanced animation variants - FIXED TYPE ISSUES
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -808,7 +807,7 @@ export function Home() {
       transition: {
         duration: 1,
         ease: "easeOut" as const,
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100
       }
     }
@@ -827,7 +826,7 @@ export function Home() {
       transition: {
         duration: 0.8,
         ease: "easeOut" as const,
-        type: "spring",
+        type: "spring" as const,
         stiffness: 100
       }
     }

@@ -1,9 +1,10 @@
 export enum StepType {
-    CreateFile,
-    CreateFolder,
-    EditFile,
-    DeleteFile,
-    RunScript
+    CreateFile = 'createFile',
+    ModifyFile = 'modifyFile',
+    DeleteFile = 'deleteFile',
+    CreateFolder = 'createFolder',
+    EditFile = 'editFile',
+    RunScript = 'runScript'
   }
   
   export interface Step {

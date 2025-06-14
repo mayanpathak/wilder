@@ -91,6 +91,7 @@
 
 import { useEffect, useState, memo } from 'react'; // Added memo for optional performance optimization
 import { motion } from 'framer-motion'; // For subtle animations
+// src/components/StepsList.tsx
 
 // Utility function to conditionally join Tailwind CSS classes.
 function cn(...inputs: (string | undefined | null | boolean)[]) {
@@ -103,9 +104,15 @@ function cn(...inputs: (string | undefined | null | boolean)[]) {
 // In a real project, these would typically be in a shared `types.ts` file.
 
 export enum StepType {
-  CreateFile = 'createFile',
-  CreateFolder = 'createFolder',
-  RunScript = 'runScript',
+  // CreateFile = 'createFile',
+  // CreateFolder = 'createFolder',
+  // RunScript = 'runScript',
+   CreateFile = 'createFile',
+    ModifyFile = 'modifyFile',
+    DeleteFile = 'deleteFile',
+    CreateFolder = 'createFolder',
+    EditFile = 'editFile',
+    RunScript = 'runScript'
 }
 
 export type StepStatus = 'pending' | 'in-progress' | 'completed';
