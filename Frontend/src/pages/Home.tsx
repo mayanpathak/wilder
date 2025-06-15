@@ -500,6 +500,10 @@
 //     </motion.div>
 //   );
 // }
+
+
+
+
 import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useAppContext } from '../context/AppContext';
