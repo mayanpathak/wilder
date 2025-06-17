@@ -24,8 +24,8 @@ app.use(cors({
 app.use(express.json());
 
 // Setup routes
-// app.use('/template', templateRoutes);
- app.use('template', templateRoutes);
+app.use('/template', templateRoutes);
+//  app.use('template', templateRoutes);
 
 app.use('/chat', chatRoutes);
 
